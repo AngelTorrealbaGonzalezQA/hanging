@@ -1,75 +1,46 @@
-# React + TypeScript + Vite
+# 🎮 Juego del Ahorcado (Hangman Game)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Juego interactivo del Ahorcado desarrollado como proyecto práctico de aprendizaje de programación.
 
-Currently, two official plugins are available:
+## 🌐 Jugar online
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+**[▶️ JUGAR AL AHORCADO](https://my-game-adtg.netlify.app/)**
 
-## React Compiler
+## 📖 Descripción
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+El objetivo del juego es descubrir una palabra oculta seleccionando letras del abecedario.
 
-## Expanding the ESLint configuration
+El jugador puede:
+- Seleccionar letras para intentar adivinar la palabra.
+- Visualizar las letras descubiertas.
+- Consultar el número de intentos.
+- Comenzar una nueva partida.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## 🛠️ Tecnologías utilizadas
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- React
+- TypeScript
+- JavaScript
+- HTML y CSS
+- Vite
+- Git y GitHub
+- Netlify para la publicación web
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## 💻 Ejecutar el proyecto localmente
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Con Node.js instalado, descarga el repositorio y ejecuta:
 
+```bash
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+Después abre la dirección local que aparece en la terminal.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 📚 Objetivo del proyecto
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Practicar conceptos de programación como variables, arrays, funciones, condicionales y manipulación de datos mediante el desarrollo de una aplicación interactiva.
 
-```
+## 👨‍💻 Autor
+
+[AngelTorrealbaGonzalezQA](https://github.com/AngelTorrealbaGonzalezQA)
